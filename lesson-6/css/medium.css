@@ -1,0 +1,137 @@
+@media only screen and (min-width: 35rem) {
+    body {
+        box-sizing: border-box;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .page-header p {
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+
+    .page-logo img {
+        width: 26vw;
+        max-width: 200px;
+    }
+
+    nav .menu {
+        display: inline;
+    }
+
+    .heroimage {
+        position: relative;
+    }
+
+    .weathersummary {
+        display: block;
+        box-sizing: border-box;
+        width: 180px;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        background-color: rgba(55, 50, 62, .7);
+        padding: 10px;
+    }
+
+    .weathersummary h2,
+    .weathersummary p {
+        color: var(--color-light2);
+        margin: 0;
+    }
+
+    .weathersummary h2 {
+        border-bottom: 2px solid var(--color-light2);
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .weathersummary p:first-of-type {
+        padding-top: 10px;
+    }
+
+    .weathersummary p span {
+        font-weight: bolder;
+        color: var(--color-accent3);
+    }
+
+    #five-days {
+        display: block;
+    }
+
+    #forecast {
+        grid-gap: 5px;
+    }
+
+    article {
+        box-sizing: border-box;
+        border: 3px solid #37323e;
+    }
+    
+    article h1 {
+        padding: 20px 20px 0 20px;
+        margin: 0;
+    }
+
+    article .content {
+        display: block;
+        padding: 20px;
+    }
+
+    article .img-container {
+        width: 300px;
+        float: right;
+        margin: 0 0 10px 20px;
+    }
+
+    #contact-info {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: minmax(300px, 600px) 1fr;
+        grid-gap: 10px;
+    }
+
+    .map iframe {
+        width: 100%;
+        max-width: 600px;
+        margin-top: 0;
+    }
+
+    #contact-info h1 {
+        grid-column: span 2;
+    }
+    
+    .contact-info {
+        align-self: flex-end;
+    }
+
+    .contact-info .social-icons {
+        justify-content: flex-end;
+    }
+
+    header,
+    main,
+    footer {
+        max-width: 940px;
+        margin: 0 auto;
+    }
+
+    /* CSS Gallery */
+
+#gallery-grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+picture {
+    width: 100%;
+}
+}
+

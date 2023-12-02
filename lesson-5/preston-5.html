@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gonzalo Palacios">
+    <meta name="description" content="Preston Town Page">
+    <link rel="shortcut icon" href="images/sun-regular-96.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <title>Preston Town Page</title>
+</head>
+
+<body>
+    <section id="friday-banner">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </section>
+
+    <header>
+        <div class="page-logo">
+            <img src="images/weather-logo.png" alt="Today's Weather Logo">
+        </div>
+        <div class="page-header">
+            <h1>Today's Weather</h1>
+            <p>Plan your day out, plan your life out</p>
+        </div>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggle()">&#9776; <span class="menu">Menu</span></button>
+        <ul id="nav-menu" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a class="active" href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="main-content">
+            <h1>Preston Town</h1>
+            <div class="heroimage">
+                <img src="images/pexels-alex-andrews-833192.jpg" alt="A village claudy landscape view">
+                <div class="weathersummary">
+                    <h2>Weather Summary</h2>
+                    <p>Temperature: <span class="highlight">41°F</span></p>
+                    <p>Precipitation: <span class="highlight">19%</span></p>
+                    <p>Humidity: <span class="highlight">100%</span></p>
+                    <p>Wind: <span class="highlight">6 mph</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content" id="forecast">
+            <h1 id="five-days">5 Day Forecast</h1>
+            <div class="forecast-day">
+                <p id="day1"></p>
+                <img src="images/rain.svg" alt="rain icon">
+                <p>41°F</p>
+            </div>
+            <div class="forecast-day">
+                <p id="day2"></p>
+                <img src="images/snow.svg" alt="snoe icon">
+                <p>36°F</p>
+            </div>
+            <div class="forecast-day">
+                <p id="day3"></p>
+                <img src="images/fog.svg" alt="fog icon">
+                <p>45°F</p>
+            </div>
+            <div class="forecast-day">
+                <p id="day4"></p>
+                <img src="images/cloudy.svg" alt="cloudy icon">
+                <p>39°F</p>
+            </div>
+            <div class="forecast-day">
+                <p id="day5"></p>
+                <img src="images/partly-cloudy-day.svg" alt="partly cloudy day icon">
+                <p>42°F</p>
+            </div>
+        </div>
+
+        <article class="main-content">
+            <h1>Article</h1>
+            <div class="content">
+                <div class="img-container">
+                    <img src="images/pexels-simon-berger-688660.jpg" alt="A snowy landscape">
+                </div>
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sunt illo id? Temporibus, adipisci
+                        vitae? Iste reprehenderit animi numquam excepturi iure minus similique repudiandae nam aperiam
+                        laborum, maxime soluta rem?</p>
+                    <p>Nemo blanditiis nam unde ipsa rem, molestias perferendis beatae a repellendus. Sunt ea aliquid
+                        impedit doloremque excepturi! Excepturi, corporis repellat veniam, fugiat deleniti non earum sit
+                        accusamus consequuntur est labore!</p>
+                    <p>Numquam asperiores consectetur labore deleniti eum quis provident dolore commodi autem quibusdam
+                        blanditiis officiis beatae praesentium illo modi itaque, nihil earum explicabo? Saepe omnis
+                        similique odit, reiciendis deserunt obcaecati eaque.</p>
+                    <p>Quaerat a, consequatur tempore rerum doloribus nemo suscipit nostrum. Laudantium deserunt nobis
+                        non hic totam, aliquid inventore sunt, culpa provident quibusdam obcaecati autem fugiat
+                        officiis,
+                        nam tempore deleniti dignissimos magnam.</p>
+                </div>
+            </div>
+        </article>
+
+        <div class="main-content" id="contact-info">
+            <h1>Contact information</h1>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2922.49383851883!2d-112.59273178454269!3d42.90462487915405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53555ae062d36e55%3A0xd77b4a28327c1ea!2sNational%20Weather%20Service!5e0!3m2!1sen!2spe!4v1612570425323!5m2!1sen!2spe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="contact-info">
+                <div><img src="images/bxs-map.svg" alt="map icon">
+                <p>1945 Beechcraft Ave, Pocatello, ID 83204, United States</p></div>
+                <div><img src="images/bxs-envelope.svg" alt="email icon">
+                <p><a href="mailto:hello@todaysweather.info">hello@todaysweather.info</a></p></div>
+                <div><img src="images/bxs-phone.svg" alt="phone icon">
+                <p><a href="tel:1-800-TODAY">1-800-TODAY</a></p></div>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><img src="images/bxl-facebook-circle.svg" alt="facebook-icon"></a>
+                    <a href="https://instagram.com"><img src="images/bxl-instagram.svg" alt="instagram-icon"></a>
+                    <a href="https://twitter.com"><img src="images/bxl-twitter.svg" alt="twitter-icon"></a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;2021 | Gonzalo M. Palacios | Lima-Peru | <a href="https://www.byui.edu/online"
+                target="_blank">BYU-Idaho Online Learning</a> | <a href="https://gnzlplcs.github.io/">Main Page</a></p>
+        <p>Last Updated: <span id="lastUpdate"></span></p>
+    </footer>
+
+    <script src="js/toggle.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/currentDay.js"></script>
+    <script src="js/banner.js"></script>
+</body>
+
+</html>

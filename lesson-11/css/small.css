@@ -1,0 +1,464 @@
+:root {
+    --font-title: 'Asul', sans-serif;
+    --font-secondary-title: 'Neuton', serif;
+    --font-paragraph: 'Work Sans', sans-serif;
+    --color-dark1: #37323e;
+    --color-dark2: #6D6A75;
+    --color-light1: #BFBDC1;
+    --color-light2: #deb841;
+    --color-accent3: #de9e36;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-light1);
+    margin: 0 auto;
+    font-family: var(--font-paragraph);
+    color: var(--color-dark1);
+}
+
+#friday-banner {
+    display: none;
+    position: sticky;
+    top: 0;
+    background-color: rgb(222, 184, 65, .9);
+    padding: 10px 20px;
+    text-align: center;
+    z-index: 1; 
+}
+
+header {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    text-align: center;
+    align-items: center;
+}
+
+.page-logo img {
+    width: 100%;
+}
+
+.page-header h1,
+.page-header p {
+    margin: 0;
+    text-align: left;
+}
+
+.page-header h1 {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+}
+
+.page-header p {
+    font-family: var(--font-secondary-title);
+    font-size: 1rem;
+    font-style: italic;
+}
+
+nav {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#37323e+0,6d6a75+100 */
+    background: rgb(55, 50, 62);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(55, 50, 62, 1) 0%, rgba(109, 106, 117, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(55, 50, 62, 1) 0%, rgba(109, 106, 117, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(55, 50, 62, 1) 0%, rgba(109, 106, 117, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#37323e', endColorstr='#6d6a75', GradientType=0);
+    /* IE6-9 */
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.25rem;
+    color: var(--color-light2);
+    padding: 1rem;
+}
+
+nav .menu {
+    display: none;
+}
+
+nav ul {
+    background-color: var(--color-light2);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    padding: .8rem 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    color: var(--color-dark1);
+}
+
+nav ul li a.active {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: var(--color-light1);
+}
+
+nav ul li a:hover {
+    background-color: var(--color-accent3);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/* --------------MAIN------------------ */
+main {
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.main-content {
+    padding: 5px;
+    margin: 5px;
+}
+
+.main-content img {
+    width: 100%;
+}
+
+.main-content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: var(--color-dark1);
+}
+main {
+    box-sizing: border-box;
+    padding: 0 2%;
+    min-height: 20rem;
+
+}
+
+main .cards-home {
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+main section {
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 2%;
+}
+
+main section:hover {
+    background-color: var(--color-light2);
+}
+
+.textContainer {
+    text-align: center;
+    padding: 15px;
+}
+
+.textContainer h2 {
+    font-family: var(--font-title);
+    margin-bottom: 3px;
+    font-size: 2rem;
+}
+
+.textContainer .motto {
+    font-family: var(--font-secondary-title);
+    font-style: italic;
+    margin-top: 2px;
+    font-size: 1.25rem;
+}
+
+.imgContainer {
+    padding: 15px;
+}
+
+.imgContainer img {
+    width: 100%;
+    border-radius: 1.5%;
+    box-shadow: 10px 10px 10px gray;
+}
+
+
+.weathersummary,
+#preston-events,
+#sodaSprings-events,
+#fishHaven-events {
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3px; */
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    background: rgb(55, 50, 62);
+}
+
+@media only screen and (max-width: 330px) {
+    .weathersummary {
+        display: block;
+    }
+}
+
+.weathersummary h2,
+#preston-events h2,
+#sodaSprings-events h2,
+#fishHaven-events h2 {
+    color: var(--color-light2);
+    margin: 0 auto;
+}
+
+.weathersummary p {
+    color: var(--color-light1);
+    margin: 0;
+}
+
+#preston-events p,
+#sodaSprings-events p,
+#fishHaven-events p {
+    color: var(--color-light1);
+    text-align: center;
+}
+
+.weathersummary h2,
+#preston-events h2,
+#sodaSprings-events h2,
+#fishHaven-events h2 {
+    border-bottom: 2px solid var(--color-light2);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    grid-column: span 2;
+}
+
+.weathersummary p span {
+    font-weight: bolder;
+    color: var(--color-accent3);
+}
+
+#attribution {
+    border-top: 2px solid var(--color-light2);
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: .8rem;
+    color: rgb(179, 179, 179);
+}
+
+#attribution a {
+    color: var(--color-light1);
+}
+
+#p-forecast,
+#ss-forecast,
+#fh-forecast {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 3px;
+}
+
+#p-forecast h1, 
+#ss-forecast h1,
+#fh-forecast h1 {
+    grid-column: span 5;
+}
+
+.forecast-day {
+    border: 1px solid transparent;
+    background-color: #aee2fa;
+    text-align: center;
+    color: var(--color-dark2);
+}
+
+#p-five-days,
+#ss-five-days,
+#fh-five-days {
+    display: none;
+}
+
+article .content {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+article .img-container {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.map iframe {
+    width: 100%;
+    max-height: 300px;
+    margin-top: 15px;
+}
+
+.contact-info img {
+    width: 30px;
+    padding: 5px;
+}
+
+.contact-info {
+    display: block;
+    align-items: center;
+    margin-top: 15px;
+}
+.contact-info p {
+    margin: 0;
+}
+
+.contact-info div {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info p a {
+    text-decoration: none;
+    color: var(--color-dark1);
+}
+
+.contact-info p a:hover {
+    text-decoration: underline;
+    color: var(--color-accent3);
+    font-weight: bold;
+}
+
+.contact-info .social-icons {
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* ---------FORM----------------- */
+form fieldset {
+    box-sizing: border-box;
+    margin: 2rem 0;
+    border: 1px solid var(--color-dark2);
+    border-radius: 10px;
+    padding: .5rem 3%;
+}
+
+form legend {
+    color: var(--color-accent3);
+    background-color: var(--color-dark2);
+    padding: .2rem .4rem;
+    border-radius: 5px;
+}
+
+form label.top,
+form label.sbs,
+form div {
+    box-sizing: border-box;
+    display: block;
+    padding-top: 1rem;
+    color: var(--color-dark1);
+    font-size: .8rem;
+
+}
+
+form label.top input,
+form label.top select,
+form label.top textarea {
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px var(--color-dark1);
+    border-radius: 4px;
+    padding: .7rem;
+    color: var(--color-dark1);
+    background: whitesmoke;
+    width: 100%;
+    max-width: 504px;
+}
+
+form label.sbs {
+    display: block;
+    padding: .5rem 0;
+    color: var(--color-dark1);
+
+}
+
+#stormSeverity {
+    width: 100%;
+    max-width: 504px;
+}
+
+form label#severity {
+    margin-top: .7rem;
+}
+
+form input.submitBtn {
+    box-sizing: border-box;
+    border: none;
+    background-color: var(--color-accent3);
+    color: var(--color-dark1);
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 2%;
+    width: 96%;
+    max-width: 504px;
+}
+
+form input.submitBtn:hover {
+    box-sizing: border-box;
+    background-color: var(--color-light2);
+    border: 1px solid var(--color-accent3);
+}
+
+form label.top input:required {
+    border-right: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+/* CSS Gallery */
+#gallery-grid {
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 1em;
+    margin: 1em auto;
+    justify-content: center;
+    width: 95vw;
+}
+
+picture {
+    width: 100%;
+}
+
+picture img {
+    width: 100%;
+}
+
+picture p {
+    display: none;
+    text-align: center;
+}
+
+/* ------------FOOTER------------- */
+footer {
+    box-sizing: border-box;
+    background-color: var(--color-dark1);
+    color: var(--color-light1);
+    text-align: center;
+    padding: .8rem 1rem;
+}
+
+footer a {
+    color: var(--color-light1);
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: var(--color-accent3);
+    font-weight: bold;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

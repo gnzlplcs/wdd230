@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Asul&family=Neuton&family=Work+Sans&display=swap');
+
+:root {
+    --font-title: 'Asul', sans-serif;
+    --font-secondary-title: 'Neuton', serif;
+    --font-paragraph: 'Work Sans', sans-serif;
+    --color-dark1: #37323E;
+    --color-dark2: #6D6A75;
+    --color-light1: #BFBDC1;
+    --color-light2: #DEB841;
+    --color-accent3: #DE9E36;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-light1);
+    margin: 0 auto;
+    font-family: var(--font-paragraph);
+    color: var(--color-dark1);
+}
+
+header {
+    margin: 15px;
+    text-align: center;
+}
+
+.page-logo img {
+    width: 150px;
+}
+
+.page-header h1,
+.page-header p {
+    margin: 10px;
+}
+
+.page-header h1 {
+    font-family: var(--font-title);
+    font-size: 2.5rem;
+}
+
+.page-header p {
+    font-family: var(--font-secondary-title);
+    font-size: 1.5rem;
+}
+
+nav {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#37323e+0,6d6a75+100 */
+    background: rgb(55, 50, 62);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(55, 50, 62, 1) 0%, rgba(109, 106, 117, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(55, 50, 62, 1) 0%, rgba(109, 106, 117, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(55, 50, 62, 1) 0%, rgba(109, 106, 117, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#37323e', endColorstr='#6d6a75', GradientType=0);
+    /* IE6-9 */
+
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.25rem;
+    color: var(--color-light2);
+    padding: 1rem;
+}
+
+nav .menu {
+    display: none;
+}
+
+nav ul {
+    background-color: var(--color-light2);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    padding: .8rem 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    color: var(--color-dark1);
+}
+
+nav ul li a.active {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: var(--color-light1);
+}
+
+nav ul li a:hover {
+    background-color: var(--color-accent3);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+main {
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.empty-content {
+    border: 1px dashed var(--color-dark1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    box-sizing: border-box;
+    background-color: var(--color-dark1);
+    color: var(--color-light1);
+    text-align: center;
+    padding: .8rem 1rem;
+}
+
+footer a {
+    color: var(--color-light1);
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: var(--color-accent3);
+    font-weight: bold;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

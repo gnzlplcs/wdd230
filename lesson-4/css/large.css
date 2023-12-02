@@ -1,0 +1,47 @@
+:root {
+    --font-title: 'Asul', sans-serif;
+    --font-secondary-title: 'Neuton', serif;
+    --font-paragraph: 'Work Sans', sans-serif;
+    --color-dark1: #37323E;
+    --color-dark2: #6D6A75;
+    --color-light1: #BFBDC1;
+    --color-light2: #DEB841;
+    --color-accent3: #DE9E36;
+}
+
+@media only screen and (min-width: 64rem) {
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#37323e+0,6d6a75+100 */
+        background: rgb(55, 50, 62);
+        /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(55, 50, 62, 1) 0%, rgba(109, 106, 117, 1) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(55, 50, 62, 1) 0%, rgba(109, 106, 117, 1) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(55, 50, 62, 1) 0%, rgba(109, 106, 117, 1) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#37323e', endColorstr='#6d6a75', GradientType=0);
+        /* IE6-9 */
+
+    }
+
+    nav ul li a {
+        color: var(--color-light1);
+        text-align: center;
+        /* padding: 5px; */
+    }
+
+    nav ul li a:hover {
+        color: var(--color-dark1);
+    }
+}

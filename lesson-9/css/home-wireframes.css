@@ -1,0 +1,21 @@
+body {
+    background-color: lightyellow;
+    color: rgb(66, 25, 107);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 640px;
+}
+
+.container img {
+    width: 100%;
+}
+
+picture {
+    margin: 20px;
+    padding: 5px 2%;
+}

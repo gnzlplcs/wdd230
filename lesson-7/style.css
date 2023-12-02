@@ -1,0 +1,27 @@
+body {
+    margin: 0 auto;
+    width: 500px;
+    background-color: rgb(235, 233, 233);
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: rgb(117, 0, 117);
+}
+
+header {
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 1em;
+    justify-items: center;
+}
+
+header img[data-src] {
+    filter: blur(0.2em);
+}
+
+header img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}

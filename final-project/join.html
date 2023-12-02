@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gonzalo Palacios">
+    <meta name="Description" content="Joining Page. Be a partner and get offers and discounts.">
+    <link rel="shortcut icon" href="assets/business-solid-96.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Join us</title>
+    <meta property="og:title" content="Join us" />
+    <meta property="og:description"
+        content="Joining Page. Be a partner and get offers and discounts." />
+    <meta property="og:url" content="https://gnzlplcs.github.io/final-project/join.html" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image"
+        content="https://gnzlplcs.github.io/final-project/assets/pagelogo512.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Join us" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://gnzlplcs.github.io/final-project/"><img src="assets/pagelogo512.svg"
+                    alt="Lima Business main logo"></a>
+        </div>
+        <div class="page-header">
+            <h1>Lima Business</h1>
+            <p>Reliable Resources</p>
+        </div>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggle()">&#9776; <span class="menu">Menu</span></button>
+        <ul id="nav-menu" class="hide">
+            <li><a href="https://gnzlplcs.github.io/final-project/">Home</a></li>
+            <li><a href="https://gnzlplcs.github.io/final-project/city.html">City</a></li>
+            <li><a class="active" href="#">Join</a></li>
+            <li><a href="https://gnzlplcs.github.io/final-project/directory.html">Directory</a></li>
+            <li><a href="https://gnzlplcs.github.io/final-project/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="hero-image">
+            <picture>
+                <source srcset="assets/catedral-lima760.jpg"
+                    media="(min-width: 540px) and (max-width: 1023px)">
+                <source srcset="assets/catedral-lima1024.jpg" media="(min-width: 1024px)">
+                <img src="assets/catedral-lima540.jpg" loading='lazy'
+                    alt="Lima Cathedral view from the Plaza Mayor" width="540">
+            </picture>
+        </div>
+
+        <div class="regular-cards membership">
+            <h2>Joining form</h2>
+            <form action="thanks.html" method="GET">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="top" for="fname">First name* <input type="text" name="fname"
+                            id="fname" pattern=".{5,}"
+                            title="Only letters and at least 5 characters" required></label>
+                    <label class="top" for="lname">Last name* <input type="text" name="lname"
+                            id="lname" pattern=".{5,}"
+                            title="Only letters and at least 5 characters" required></label>
+                    <label for="title" class="top">Title
+                        <input type="text" name="title" id="title">
+                    </label>
+                    <label class="top" for="email">Email* <input type="email" name="email"
+                            id="email" placeholder="email@email.com" required></label>
+                    <label class="top" for="phone">Cell Phone* <input type="tel" name="phone"
+                            id="phone"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label class="top" for="bname">Business name* <input type="text" name="bname"
+                            id="bname" required></label>
+                    <label class="top" for="baddress">Business address <input type="text"
+                            name="baddress" id="baddress"></label>
+                    <label class="top" for="bsite">Website <input type="url" name="bsite" id="bsite"
+                            placeholder="www"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Memberships program</legend>
+                    <label class="top" for="membershipType">Select a membership option (annual fee)
+                        <input list="membershipList" id="membershipType" name="membershipType">
+                        <datalist id="membershipList" aria-placeholder="Select one option">
+                            <option value="Non-profit ($100)"></option>
+                            <option value="Bronze ($200)"></option>
+                            <option value="Silver ($400)"></option>
+                            <option value="Gold ($1000)"></option>
+                        </datalist>
+                    </label><br><br>
+                    <div class="regular-cards membership-cards">
+                        <section>
+                            <h3>Non-profit ($100)</h3>
+                            <ul>
+                                <li>An updated Business Contact List of the main business in the
+                                    city</li>
+                                <li>10% discount in associate business, like restaurants, resorts,
+                                    clubs, and more</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Bronze ($200)</h3>
+                            <ul>
+                                <li>All Non-profit program perks</li>
+                                <li>20% discount in any of our trainings, like Marketing, Finance,
+                                    Accountancy, and so on (just one training per year)</li>
+                                <li>A free financial consultory for a start-up</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Silver ($400)</h3>
+                            <ul>
+                                <li>All Bronze program perks</li>
+                                <li>One four-person full-day at El Bosque Country Club (lunch
+                                    included)</li>
+                                <li>Two reservations of our Events Hall for business meetings</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Gold ($1000)</h3>
+                            <ul>
+                                <li>All Silver program perks</li>
+                                <li>A free three-month Entrepreneurship course (Certificate
+                                    included)</li>
+                                <li>Tickets for Soccer games, Concerts and Seminars</li>
+                            </ul>
+                        </section>
+                    </div>
+                </fieldset>
+                <div id="call-to-action">
+                        <input type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="contact-info">
+                <div class="contact-email"><img src="assets/bxs-envelope.svg" alt="email icon">
+                    <p><a href="mailto:hello@limabusiness.info">hello@limabusiness.info</a></p>
+                </div>
+                <div class="contact-phone"><img src="assets/bxs-phone.svg" alt="phone icon">
+                    <p><a href="tel:1-800-LIMAB">1-800-LIMAB</a></p>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" rel="noreferrer"><img
+                        src="assets/bxl-facebook-circle.svg" alt="facebook-icon" width="45"></a>
+                <a href="https://instagram.com" target="_blank" rel="noreferrer"><img
+                        src="assets/bxl-instagram.svg" alt="instagram-icon" width="45"></a>
+                <a href="https://twitter.com" target="_blank" rel="noreferrer"><img
+                        src="assets/bxl-twitter.svg" alt="twitter-icon" width="45"></a>
+            </div>
+
+            <div class="copyright">
+                Lima Business SA © 2021<br>
+                Gonzalo Palacios | Lima, Peru | <a href="https://www.byui.edu/online"
+                    target="_blank" rel="noreferrer">BYU Idaho Online Learning</a> | <a
+                    href="https://gnzlplcs.github.io/" target="_blank" rel="noreferrer">Assignments
+                    site</a> | <a href="https://gnzlplcs.github.io/final-project/credits.html">Credits</a><br>
+                <span id="last-modification"></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" rel="preload">
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

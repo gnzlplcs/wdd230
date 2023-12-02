@@ -1,0 +1,27 @@
+@media only screen and (min-width: 35rem) {
+    body {
+        box-sizing: border-box;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page-logo img {
+        width: 26vw;
+        max-width: 200px;
+    }
+
+    nav .menu {
+        display: inline;
+    }
+    header,
+    main,
+    footer {
+        max-width: 940px;
+        margin: 0 auto;
+    }
+
+}

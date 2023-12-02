@@ -1,0 +1,59 @@
+@media only screen and (min-width: 35rem) {
+    body {
+        box-sizing: border-box;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .page-header p {
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+
+    .page-logo img {
+        width: 26vw;
+        max-width: 200px;
+    }
+
+    nav .menu {
+        display: inline;
+    }
+
+    main section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .imgContainer,
+    .textContainer {
+        align-self: center;
+    }
+
+    @media only screen and (max-width: 64rem) {
+        .cards section:nth-of-type(even) {
+            display: flex;
+            flex-flow: row-reverse;
+        }
+
+        .cards section:nth-of-type(even) .imgContainer,
+        .cards section:nth-of-type(even) .textContainer {
+            width: 50%;
+        }
+    }
+
+    header,
+    main,
+    footer {
+        max-width: 940px;
+        margin: 0 auto;
+    }
+
+}

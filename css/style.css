@@ -1,0 +1,106 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+
+:root {
+    --primary-color: #6a2c70;
+    --secondary-color: #b83b5e;
+    --accent1-color: #f9ed69;
+    --accent2-color: #f08a5d;
+    --principal-font: "Noto Sans", "Roboto", Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--accent1-color);
+    font-family: var(--principal-font);
+}
+
+.container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 680px;
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+}
+
+.header {
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    /* border-radius: 0.5em; */
+    margin: 0;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.header h1 {
+    color: var(--accent1-color);
+    text-align: center;
+    padding: 0.75rem;
+    max-width: 45rem;
+    margin: 0;
+}
+
+.header img {
+    width: 20vw;
+    margin: 0 auto;
+    border-radius: 5px;
+    max-width: 150px;
+}
+
+.assignments-section {
+    box-sizing: border-box;
+    background-color: var(--secondary-color);
+    background: linear-gradient(0deg, rgba(249,237,105,1) 0%, rgba(240,138,93,1) 100%);
+    color: var(--primary-color);
+    width: 97.5%;
+    margin: 0 auto;
+    padding: 15px 35px;
+    padding-bottom: 130px;
+}
+
+.assignments-section h2 {
+    margin: 0;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.assignments-section ul {
+    padding: 15px;
+}
+
+.assignments-section ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.assignments-section ul li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    /* border-radius: .5em; */
+    color: var(--accent1-color);
+    text-align: center;
+    padding: 15px;
+    min-height: 70px;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: underline;
+    color: var(--accent1-color);
+}
+
+footer a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+footer p {
+    margin: 0;
+}

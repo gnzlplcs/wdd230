@@ -1,0 +1,28 @@
+@media only screen and (min-width: 640px) {
+    body {
+        max-width: 940px;
+    }
+
+    header img {
+        width: 256px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+    }
+
+    main .target,
+    main section .persona,
+    main .scenarios {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    main section .field p,
+    main section .content p {
+        margin: 10px 0;
+    }
+    
+}

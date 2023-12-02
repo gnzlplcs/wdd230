@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gonzalo Palacios">
+    <meta name="description" content="Preston Town Page">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <title>Preston Town Page</title>
+</head>
+
+<body>
+    <header>
+        <div class="page-logo">
+            <img src="images/weather-logo.png" alt="Today's Weather Logo">
+        </div>
+        <div class="page-header">
+            <h1>Today's Weather</h1>
+            <p>Plan your day out, plan your life out</p>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggle()">&#9776; <span class="menu">Menu</span></button>
+        <ul id="nav-menu" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a class="active" href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="empty-content">Weather Summary</div>
+        <div class="empty-content">5 Day Forecast</div>
+        <div class="empty-content">Article</div>
+        <div class="empty-content">Contact information</div>
+    </main>
+    <footer>
+        <p>&copy;2021 | Gonzalo M. Palacios | Lima-Peru | <a href="https://www.byui.edu/online"
+                target="_blank">BYU-Idaho Online Learning</a> | <a href="https://gnzlplcs.github.io/">Main Page</a></p>
+        <p>Last Updated: <span id="lastUpdate"></span></p>
+    </footer>
+    <script src="js/toggle.js"></script>
+    <script src="js/date.js"></script>
+</body>
+
+</html>

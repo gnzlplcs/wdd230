@@ -1,0 +1,452 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    text-decoration: none;
+}
+
+:root {
+    --accent-color: #ff6700;
+    --light1-color: #ebebeb;
+    --light2-color: #c0c0c0;
+    --dark1-color: #004e98;
+    --dark2-color: #3a6ea5;
+    --main-title-font: 'Bangers', cursive;
+    --subtitle-font: 'Cabin Condensed', sans-serif;
+    --plain-text-font: 'Crimson Pro', serif;
+}
+
+body {
+    font-family: var(--plain-text-font);
+    background-color: var(--light1-color);
+    margin: 0 auto;
+}
+
+/* -------Header---------- */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark1-color);
+    padding: 1rem;
+}
+
+div.logo {
+    border-radius: 50%;
+    background-color: var(--light1-color);
+    min-width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+@media only screen and (max-width: 559px) {
+    div.logo {
+        display: none;
+    }
+}
+
+div.logo img {
+    width: 80px;
+}
+
+div.page-header {
+    color: var(--light2-color);
+    letter-spacing: 4px;
+    font-family: var(--subtitle-font);
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+div.page-header h1 {
+    color: var(--light1-color);
+    font-family: var(--main-title-font);
+    font-size: 3rem;
+    margin: 0;
+}
+
+div.page-header p {
+    margin: 0;
+}
+
+/* ------------------Nav Menu--------------- */
+nav {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff6700+1,d65900+100 */
+    background: rgb(255, 103, 0);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255, 103, 0, 1) 1%, rgba(214, 89, 0, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 103, 0, 1) 1%, rgba(214, 89, 0, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 103, 0, 1) 1%, rgba(214, 89, 0, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6700', endColorstr='#d65900', GradientType=0);
+    /* IE6-9 */
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: var(--light1-color);
+    font-family: var(--subtitle-font);
+    font-size: 1.25rem;
+    padding: 1rem;
+}
+
+nav .menu {
+    display: none;
+    letter-spacing: 2px;
+
+}
+
+nav ul {
+    background-color: var(--light2-color);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    font-family: var(--subtitle-font);
+    letter-spacing: 2px;
+    list-style: none;
+    text-decoration: none;
+    padding: .8rem 1rem;
+    border-bottom: 1px solid var(--light2-color);
+    filter: brightness(90%);
+    color: var(--dark1-color);
+}
+
+nav ul li a.active {
+    background-color: rgba(0, 0, 0, .15);
+    border-bottom: 1px solid var(--dark2-color);
+
+    color: var(--light1-color);
+    filter: brightness(1.15);
+}
+
+nav ul li a:hover {
+    background-color: var(--accent-color);
+    color: var(--light1-color);
+    filter: brightness(1.15);
+    border-bottom: none;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/* -----------Main Section------------- */
+main {
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+h2 {
+    margin: 1rem 0;
+    color: var(--dark2-color);
+    font-family: var(--subtitle-font);
+    font-size: 2.2rem;
+    text-align: center;
+    letter-spacing: 2px;
+    padding-bottom: .75rem;
+    border-bottom: 3px var(--accent-color) solid;
+}
+
+h3 {
+    margin: .75rem 0;
+    color: var(--dark1-color);
+    font-family: var(--main-title-font);
+    letter-spacing: 2px;
+    font-size: 1.8rem;
+}
+
+.regular-cards {
+    display: grid;
+    margin: 1.5rem 2%;
+    padding: 1.5rem;
+    border-radius: 20px;
+    background: var(--light1-color);
+    box-shadow: 14px 14px 33px #bababa,
+        -14px -14px 33px #ffffff;
+}
+
+.regular-cards a {
+    color: var(--dark2-color);
+    font-family: var(--subtitle-font);
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
+
+.regular-cards a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+
+.description p,
+.description ul li,
+.membership p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin: .75rem;
+}
+
+.regular-cards section {
+    margin: 1rem 1.5%;
+    padding: 1rem;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #cdcdcd, #adadad);
+    ;
+    box-shadow: 8px 8px 16px #989898,
+        -8px -8px 16px #e8e8e8;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.regular-cards iframe {
+    width: 100%;
+}
+
+.cards-locals section,
+.board-directors section,
+.gallery section  {
+    display: grid;
+}
+
+.upcoming-events section,
+.cards-locals-dir section{
+    display: block;
+}
+
+.upcoming-events section div:first-child,
+.cards-locals-dir section div:first-child {
+    padding: .75rem;
+}
+
+.upcoming-events section img,
+.cards-locals-dir section img,
+.board-directors section img,
+.gallery section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.membership-cards section ul li {
+    text-align: left;
+}
+
+/* ---------------Forecast Weather */
+.forecastCard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        'title title title'
+        'day1 day2 day3';
+}
+
+.forecastCard h3 {
+    grid-area: title;
+}
+
+.forecastCard #day1 {
+    grid-area: day1;
+}
+
+.forecastCard #day2 {
+    grid-area: day2;
+}
+
+.forecastCard #day3 {
+    grid-area: day3;
+}
+
+.forecastCard img {
+    width: 100%;
+}
+
+.forecastCard div div:first-child {
+    font-family: var(--subtitle-font);
+}
+
+/* ------------Membership section---------- */
+.membership div {
+    margin: 0 auto;
+}
+
+.membership img {
+    display: flex;
+    justify-self: center;
+}
+
+.membership form {
+    justify-items: center;
+}
+
+#call-to-action {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+#call-to-action a {
+    display: flex;
+    justify-items: center;
+}
+
+#call-to-action button,
+#call-to-action input {
+    padding: 1rem 2rem;
+    color: #001A33;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #ff6e00, #e65d00);
+    box-shadow: 8px 8px 16px #989898,
+    -8px -8px 16px #e8e8e8;
+    border: none;
+    font-family: var(--subtitle-font);
+}
+
+#call-to-action:hover {
+    filter: brightness(.9);
+}
+
+/* ------------Form------------------- */
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--light2-color);
+    border-radius: 10px;
+    padding: .5rem 3%;
+}
+
+form legend {
+    color: var(--dark1-color);
+    padding: .2rem .4rem;
+    border-radius: 5px;
+    font-family: var(--subtitle-font);
+    font-size: 1.2rem;
+}
+
+form label.top {
+    display: block;
+    padding-top: 1rem;
+    color: var(--dark2-color);
+    font-size: .9rem;
+    font-family: var(--subtitle-font);
+
+}
+
+form label.top input,
+form label.top select,
+form label.top textarea {
+    -webkit-appearance: none;
+    font-family: var(--plain-text-font);
+    box-sizing: border-box;
+    display: block;
+    font-size: 1.2rem;
+    border: solid 1px var(--color-dark1);
+    border-radius: 4px;
+    padding: .7rem;
+    color: black;
+    background: whitesmoke;
+    width: 100%;
+    max-width: 100%;
+}
+
+form label.top input:focus,
+form label.top select:focus,
+form label.top textarea:focus {
+    background-color: rgba(255, 102, 0,.1);
+}
+
+form label.top input:required {
+    border-right: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+/* ---------------Footer Section---------------- */
+footer {
+    background-color: var(--light2-color);
+    color: #4d4d4d;
+    padding: 0 2%;
+}
+
+footer .footer {
+    display: grid;
+    margin: 1.5rem 2% 0;
+}
+
+footer .footer .contact-info {
+    display: inline-flexbox;
+    justify-self: center;
+    padding: 1.5rem 3rem;
+
+}
+
+.footer .contact-info .contact-email,
+.footer .contact-info .contact-phone {
+    display: flex;
+    font-family: var(--subtitle-font);
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+}
+
+.contact-info a {
+    margin-left: .5rem;
+    color: black;
+}
+
+.contact-info a:hover {
+    color: var(--dark1-color);
+    text-decoration: underline;
+}
+
+footer .footer .social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 1.5rem 3rem;
+}
+
+.footer .social-icons img {
+    width: 45px;
+}
+
+footer .footer .copyright {
+    border-top: 1px #4d4d4d solid;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    font-family: var(--subtitle-font);
+    font-size: .75rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.copyright a {
+    color: black;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

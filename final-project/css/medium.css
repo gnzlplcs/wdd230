@@ -1,0 +1,78 @@
+@media only screen and (min-width: 35rem) {
+    main {
+        max-width: 940px;
+        margin: 0 auto;
+    }
+
+    nav .menu {
+        display: inline;
+    }
+
+    button {
+        display: block;
+    }
+
+    .cards-locals,
+    .board-directors,
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: .75rem;
+    }
+
+    .cards-locals h2,
+    .weather h2,
+    .board-directors h2,
+    .gallery h2 {
+        grid-column: span 2;
+    }
+
+    .weather {
+        grid-template-columns: 2fr 3fr;
+        grid-gap: .75rem;
+    }
+
+    footer .footer {
+        grid-template-areas: 'contact icons'
+            'copyright copyright';
+        grid-template-columns: 1fr 1fr;
+        max-width: 940px;
+        margin: 0 auto;
+    }
+
+    footer .footer .contact-info {
+        grid-area: contact;
+        align-items: center;
+    }
+
+    footer .footer .social-icons {
+        grid-area: icons;
+        align-items: center;
+    }
+
+    footer .footer .copyright {
+        grid-area: copyright;
+        padding: 1.5rem 5rem;
+
+    }
+}
+
+@media only screen and (min-width: 840px) {
+    .upcoming-events section {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+    }
+
+    .cards-locals-dir,
+    .membership-cards,
+    .board-directors {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: .75rem;
+    }
+
+    .cards-locals-dir h2,
+    .membership-cards h2,
+    .board-directors h2 {
+        grid-column: span 2;
+    }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gonzalo Palacios">
+    <meta name="description" content="Gallery Page">
+    <link rel="shortcut icon" href="images/sun-regular-96.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Gallery</title>
+</head>
+
+<body>
+    <section id="friday-banner">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </section>
+
+    <header>
+        <div class="page-logo">
+            <a href="https://gnzlplcs.github.io/lesson-11/index.html"><img src="images/weather-logo.png" alt="Today's Weather Logo"></a>
+        </div>
+        <div class="page-header">
+            <h1>Today's Weather</h1>
+            <p>Plan your day out, plan your life out</p>
+        </div>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggle()">&#9776; <span class="menu">Menu</span></button>
+        <ul id="nav-menu" class="hide">
+            <li><a href="https://gnzlplcs.github.io/lesson-11/index.html">Home</a></li>
+            <li><a href="https://gnzlplcs.github.io/lesson-11/preston.html">Preston</a></li>
+            <li><a href="https://gnzlplcs.github.io/lesson-11/sodasprings.html">Soda Springs</a></li>
+            <li><a href="https://gnzlplcs.github.io/lesson-11/fishhaven.html">Fish Haven</a></li>
+            <li><a href="https://gnzlplcs.github.io/lesson-11/stormcenter.html">Storm Center</a></li>
+            <li><a class="active" href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main id="gallery-grid">
+        <picture>
+            <source srcset="images/image-01-medium.jpg" media="(min-width: 560px) and (max-width: 1023px)">
+            <source srcset="images/image-01-large.jpg" media="(min-width: 1024px)">
+            <img src="https://dummyimage.com/300x400/cfcfcf/000&text=Placeholder" data-src="images/image-01-small.jpg" alt="A landscape picture" class="gallery-img">
+            <p>A beautiful landscape</p>
+        </picture>
+        <picture>
+            <source srcset="images/image-02-medium.jpg" media="(min-width: 560px) and (max-width: 1023px)">
+            <source srcset="images/image-02-large.jpg" media="(min-width: 1024px)">
+            <img src="https://dummyimage.com/300x400/cfcfcf/000&text=Placeholder" data-src="images/image-02-small.jpg" alt="A landscape picture" class="gallery-img">
+            <p>A beautiful landscape</p>
+        </picture>
+        <picture>
+            <source srcset="images/image-03-medium.jpg" media="(min-width: 560px) and (max-width: 1023px)">
+            <source srcset="images/image-03-large.jpg" media="(min-width: 1024px)">
+            <img src="https://dummyimage.com/300x400/cfcfcf/000&text=Placeholder" data-src="images/image-03-small.jpg" alt="A landscape picture" class="gallery-img">
+            <p>A beautiful landscape</p>
+        </picture>
+        <picture>
+            <source srcset="images/image-04-medium.jpg" media="(min-width: 560px) and (max-width: 1023px)">
+            <source srcset="images/image-04-large.jpg" media="(min-width: 1024px)">
+            <img src="https://dummyimage.com/300x400/cfcfcf/000&text=Placeholder" data-src="images/image-04-small.jpg" alt="A landscape picture" class="gallery-img">
+            <p>A beautiful landscape</p>
+        </picture>
+        <picture>
+            <source srcset="images/image-05-medium.jpg" media="(min-width: 560px) and (max-width: 1023px)">
+            <source srcset="images/image-05-large.jpg" media="(min-width: 1024px)">
+            <img src="https://dummyimage.com/300x400/cfcfcf/000&text=Placeholder" data-src="images/image-05-small.jpg" alt="A landscape picture" class="gallery-img">
+            <p>A beautiful landscape</p>
+        </picture>
+        <picture>
+            <source srcset="images/image-06-medium.jpg" media="(min-width: 560px) and (max-width: 1023px)">
+            <source srcset="images/image-06-large.jpg" media="(min-width: 1024px)">
+            <img src="https://dummyimage.com/300x400/cfcfcf/000&text=Placeholder" data-src="images/image-06-small.jpg" alt="A landscape picture" class="gallery-img">
+            <p>A beautiful landscape</p>
+        </picture>
+        <picture>
+            <source srcset="images/image-07-medium.jpg" media="(min-width: 560px) and (max-width: 1023px)">
+            <source srcset="images/image-07-large.jpg" media="(min-width: 1024px)">
+            <img src="https://dummyimage.com/300x400/cfcfcf/000&text=Placeholder" data-src="images/image-07-small.jpg" alt="A landscape picture" class="gallery-img">
+            <p>A beautiful landscape</p>
+        </picture>
+        <picture>
+            <source srcset="images/image-08-medium.jpg" media="(min-width: 560px) and (max-width: 1023px)">
+            <source srcset="images/image-08-large.jpg" media="(min-width: 1024px)">
+            <img src="https://dummyimage.com/300x400/cfcfcf/000&text=Placeholder" data-src="images/image-08-small.jpg" alt="A landscape picture" class="gallery-img">
+            <p>A beautiful landscape</p>
+        </picture>
+        <picture>
+            <source srcset="images/image-09-medium.jpg" media="(min-width: 560px) and (max-width: 1023px)">
+            <source srcset="images/image-09-large.jpg" media="(min-width: 1024px)">
+            <img src="https://dummyimage.com/300x400/cfcfcf/000&text=Placeholder" data-src="images/image-09-small.jpg" alt="A landscape picture" class="gallery-img">
+            <p>A beautiful landscape</p>
+        </picture>
+        
+    </main>
+
+    <footer>
+        <p>&copy;2021 | Gonzalo M. Palacios | Lima-Peru | <a href="https://www.byui.edu/online"
+                target="_blank">BYU-Idaho Online Learning</a> | <a href="https://gnzlplcs.github.io/">Main Page</a></p>
+        <p>Last Updated: <span id="lastUpdate"></span></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
